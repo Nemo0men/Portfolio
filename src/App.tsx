@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { Palette, Code, Lightbulb, Heart, Sparkles, User, Laptop, Rocket } from 'lucide-react';
+import { useEffect, useRef } from 'react';
+import { Palette, Code, Lightbulb, Heart, Sparkles, Laptop, Rocket } from 'lucide-react';
 import { useTypewriter } from './hooks/useTypewriter';
 import Navbar from "./components/NavBar/navbar";
 import Skills from './components/Skills/skills';
 import Works from "./components/Works/works";
 import Contact from "./components/Contact/contact";
+import me from './assets/me.png';
 
 function App() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -26,6 +27,9 @@ function App() {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  // Comment or remove the test error after verification
+  // throw new Error('Test error to check ErrorBoundary');
+
   return (
     <div className="bg-black text-white">
       <Navbar />
@@ -34,10 +38,10 @@ function App() {
       <section id="intro" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 to-blue-900/30" />
         <div 
-          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')] 
-          bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-[url('https://i.pinimg.com/736x/9a/20/0b/9a200bfd08b259c93174a2a8226b0448.jpg')] 
+          bg-cover bg-center opacity-90"
         />
-        <h1 className="text-5xl md:text-7xl font-bold text-center px-4 z-10">
+        <h1 className="text-5xl md:text-7xl font-bold text-center px-4 z-10 text-black">
           {titleText}<span className="animate-pulse">|</span>
         </h1>
       </section>
@@ -56,7 +60,7 @@ function App() {
             <div className="fade-in flex items-center gap-8 flex-row-reverse">
               <Code className="w-16 h-16 text-blue-400 flex-shrink-0" />
               <p className="text-2xl md:text-3xl leading-relaxed text-right">
-                Through lines of code and careful craftsmanship, we breathe life into digital experiences...
+                Through lines of code and careful craftsmanship, I breathe life into digital experiences...
               </p>
             </div>
 
@@ -88,13 +92,13 @@ function App() {
       <section className="min-h-screen relative overflow-hidden py-20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-purple-900/30" />
         <div 
-          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')] 
+          className="absolute inset-0 bg-[url('https://i.pinimg.com/736x/ab/1b/fe/ab1bfe20a4a1d6846cadcf0bdc8cf399.jpg')] 
           bg-cover bg-center opacity-10"
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto space-y-24">
             <div className="text-center scale-in">
-              <User className="w-24 h-24 text-indigo-400 mx-auto mb-8" />
+              <img src={me} alt="Me" className="h-60 mx-auto mb-8" />
               <h2 className="text-5xl md:text-6xl font-bold mb-8">
                 I'm Nehemiah
               </h2>
@@ -130,7 +134,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-gray-400">
-        <p>© 2024 Nehemiah's Portfolio. All rights reserved.</p>
+        <p>© 2025 Nehemiah's Portfolio. All rights reserved.</p>
       </footer>
     </div>
   );

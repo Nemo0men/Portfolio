@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { User, GraduationCap, Code2 } from 'lucide-react';
 
 const Skills = () => {
@@ -32,7 +32,7 @@ const Skills = () => {
                 <p className="text-gray-300 leading-relaxed">
                   I am a Computer Engineering third year student at the University of Virginia, 
                   pursuing my degree with a minor in Data Science from August 2022 
-                  to May 2026, maintaining a GPA of 3.5/4.0. As a member of ML@UVA, the 
+                  to May 2026. As a member of ML@UVA, the 
                   Mechatronics and Robotics Society, and Viva Lab, I apply advanced 
                   technologies in web development, data systems, and deep learning.
                 </p>
