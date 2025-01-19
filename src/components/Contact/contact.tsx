@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen py-20 bg-black/90">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">Get in Touch</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">Contact Me</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-8 fade-in">
             <div className="flex items-center space-x-4">
