@@ -94,7 +94,7 @@ const Contact = () => {
               Send Message
             </button>
             <div className="links flex justify-center space-x-4 mt-8">
-              <a href="https://www.linkedin.com/in/nehemiah-kim-a1b087291/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/chankyu-nehemiah-kim/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn" className="link w-8 h-8" />
               </a>
               <a href="https://github.com/Nemo0men" target="_blank" rel="noopener noreferrer">
